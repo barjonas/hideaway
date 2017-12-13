@@ -33,7 +33,7 @@ int main(int argc, char *argv[]) {
     if (argc != 6)
         return std::fprintf(
                    stderr,
-                   "usage %s <seconds> <away x> <away y> <back x> <back y>\n",
+                   "usage: %s <seconds> <away x> <away y> <back x> <back y>\n",
                    argv[0]),
                EXIT_FAILURE;
 
