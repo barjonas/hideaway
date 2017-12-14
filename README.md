@@ -47,6 +47,13 @@ $ make
 
 ```
 
+**Note** that just a single job of this plugin should be running. The previous
+configuration will launch a job for any device that responds to `REL_X` or
+`REL_Y`, if there's more than one being actively used that does, this will cause
+the "hide away" process to happen multiple times. In that case, check the
+_Interception Tools_ configuration spec about filtering by device name and other
+properties.
+
 For more information about the [_Interception Tools_][interception-tools], check
 the project's website.
 
