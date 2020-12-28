@@ -28,10 +28,8 @@ pointer back on the screen's center.
 ```
 $ git clone git@gitlab.com:interception/linux/plugins/hideaway.git
 $ cd hideaway
-$ mkdir build
-$ cd build
-$ cmake ..
-$ make
+$ cmake -B build -DCMAKE_BUILD_TYPE=Release
+$ cmake --build build
 ```
 
 ## Execution
@@ -40,7 +38,7 @@ $ make
 `udevmon` job configuration is:
 
 ```yaml
-- JOB: "intercept $DEVNODE | hideaway 4 10000 10000 -512 -256 | uinput -d $DEVNODE"
+- JOB: intercept $DEVNODE | hideaway 4 10000 10000 -512 -256 | uinput -d $DEVNODE
   DEVICE:
     EVENTS:
       EV_REL: [REL_X, REL_Y]
