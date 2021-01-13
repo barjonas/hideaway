@@ -61,15 +61,9 @@ I'm maintaining an Archlinux package on AUR:
 
 - <https://aur.archlinux.org/packages/interception-hideaway>
 
-I don't use Ubuntu and recommend Archlinux instead, as it provides the AUR, so I
-don't maintain PPAs. For more information on Ubuntu/Debian installation check
-this:
-
-- <https://askubuntu.com/questions/979359/how-do-i-install-caps2esc>
-
 ## License
 
-<a href="https://gitlab.com/interception/linux/plugins/caps2esc/blob/master/LICENSE.md">
+<a href="https://gitlab.com/interception/linux/plugins/hideaway/blob/master/LICENSE.md">
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/License_icon-mit-2.svg/120px-License_icon-mit-2.svg.png" alt="MIT">
 </a>
 
