@@ -26,7 +26,7 @@ pointer back on the screen's center.
 ## Building
 
 ```
-$ git clone git@gitlab.com:interception/linux/plugins/hideaway.git
+$ git clone https://gitlab.com/interception/linux/plugins/hideaway.git
 $ cd hideaway
 $ cmake -B build -DCMAKE_BUILD_TYPE=Release
 $ cmake --build build
