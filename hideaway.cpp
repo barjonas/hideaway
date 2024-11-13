@@ -44,7 +44,7 @@ int main(int argc, char *argv[]) {
     const std::int32_t away_y = std::stoi(argv[3]);
     const std::int32_t back_x = std::stoi(argv[4]);
     const std::int32_t back_y = std::stoi(argv[5]);
-    auto last_event           = system_clock::now();
+    auto last_event           = 0;
     bool hidden               = false;
     std::mutex move_mutex;
     input_event input;
