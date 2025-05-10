@@ -44,7 +44,7 @@ int main(int argc, char *argv[]) {
     const std::int32_t away_y = std::stoi(argv[3]);
     const std::int32_t back_x = std::stoi(argv[4]);
     const std::int32_t back_y = std::stoi(argv[5]);
-    auto last_event           = 0;
+    auto last_event           = std::chrono::time_point<system_clock>();
     bool hidden               = false;
     std::mutex move_mutex;
     input_event input;
@@ -55,7 +55,7 @@ int main(int argc, char *argv[]) {
             for (;;) {
                 {
                     std::lock_guard<std::mutex> lock{move_mutex};
-                    if (!hidden && system_clock::now() - last_event > seconds) {
+                    if (system_clock::now() - last_event > seconds) {
                         move(away_x, away_y);
                         last_event = system_clock::now();
                         hidden     = true;
